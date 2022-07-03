@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="../src/css/styleLog.css">
+</head>
+<body>
+
+    <div class="t-form">
+        
+        <form onsubmit="entrar()">
+            <h3 id="titulo">Inicio de Sesion</h5>
+            <table>
+                <tr>
+                    <td>Usuario:</td>
+                    <td><input class="login" type="text" name="username" id="username" size="18" maxlength="18"></td>
+                </tr>
+                <tr>
+                    <td>Contraseña:</td>
+                    <td><input class="login" type="password" name="password" id="password" size="18" maxlength="18"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center"><input  class="btn" type="submit" value="Enviar"></td>
+                </tr>
+            </table>
+
+            <p><a href="../public/recovery.html">¿Olvidaste tu Contraseña?</a></p>
+            
+            <div>
+                <a href="../public/register.html"><input class="btn-register" type="button" value="Resgistrate"></a>
+            </div>
+
+            <div>
+                <p id="result"></h3>
+            </div>
+        </form>
+        
+    </div>
+    <script src="../src/js/main.js"></script>
+</body>
+</html>
